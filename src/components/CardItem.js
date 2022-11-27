@@ -12,6 +12,7 @@ function CardItem(props) {
                 </figure>
                 <div className="cards__item__info">
                     <h5 className="cards__item__text">{props.text}</h5>
+                    <a href={props.github} target="_blank" className="github" rel="noopener noreferrer">GitHub <i className="fa-brands fa-github"/></a>
                 </div>
             </a>
         </li> 

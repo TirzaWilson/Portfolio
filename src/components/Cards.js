@@ -11,7 +11,7 @@ function Cards() {
   return (
     <div id="cards">
       <div id='cards__link'></div>
-      <h1 className="cards__header" data-aos="fade-down">PROJECTS</h1>
+      <h1 className="cards__header" data-aos="fade">PROJECTS</h1>
       <div className="cards__container">
          <div className="cards__wrapper"></div>
          <ul className="cards__items" data-aos="fade-up">
@@ -20,12 +20,14 @@ function Cards() {
             text="Designed and built a custom website from the ground up for a local real estate company."
             label="Real Estate Website"
             path="https://www.tpxrealty.com"
+            github="https://github.com/TazMerch/TPX-Realty-Website"
             />
             <CardItem
             src="images/portfoliothumbnail.jpg"
             text="The website you're currently on was built by myself using Reactjs."
             label="Portfolio"
             path="/"
+            github="https://github.com/TazMerch/portfolio"
             />
          </ul>
       </div>

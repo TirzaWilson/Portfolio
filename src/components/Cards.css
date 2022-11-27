@@ -30,7 +30,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1100px;
     width: 90%;
     margin: 0 auto;
   }
@@ -114,12 +114,34 @@
     padding: 20px 30px 30px;
     background: #fff;
     height: 100%;
+    display: grid;
   }
   
   .cards__item__text {
     color: #000000;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .github {
+    text-decoration: none;
+    justify-self: center;
+    background-color: rgb(37, 101, 131);
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: fit-content;
+  }
+
+  .github:hover {
+    background-color: rgb(17, 48, 63);
+  }
+
+  .fa-github {
+    padding-left: 5px;
   }
   
   @media only screen and (min-width: 1200px) {
@@ -149,6 +171,20 @@
       color: #000000;
       font-size: 17px;
       line-height: 18px;
+    }
+
+    .github {
+      font-size: 12px;
+      padding: 5px 10px;
+      margin-top: 10px;
+    }
+  
+    .github:hover {
+      background-color: rgb(17, 48, 63);
+    }
+  
+    .fa-github {
+      padding-left: 5px;
     }
   }
 

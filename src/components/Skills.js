@@ -9,7 +9,7 @@ export default function Skills() {
         <div className='skills__intro' data-aos="fade-right">
             <h1 className="skills__header">Skills</h1>
             <p>
-                I'm an enthusiastic and quick learner. Within one year I was able to learn Python, HTML, CSS, Javascript without any prior programming knowledge.
+                I'm an enthusiastic and quick learner. Within one year I was able to learn the following languages/frameworks without any prior programming knowledge.
             </p>
         </div>
         <div className='skills__list' data-aos="fade-left">
