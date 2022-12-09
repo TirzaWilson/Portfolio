@@ -1,0 +1,34 @@
+.contact {
+    padding: 3rem 3rem;
+    background: rgb(0, 80, 112);
+    /* background: linear-gradient(54deg, rgba(0,35,49,1) 23%, rgb(0, 80, 112) 100%);  */
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.808);
+    -webkit-filter: drop-shadow(0 0px 2px rgba(0, 0, 0, 0.808));
+    filter: drop-shadow(0 0px 2px rgba(0, 0, 0, 0.808));
+}
+
+.contact__header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #fff
+}
+
+.contact__wrapper {
+
+}
+
+.contact__form__container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contact__form {
+    
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,14 +1,14 @@
 #skills {
     padding: 3rem 3rem;
-    background: rgb(8,35,46);
-    background: linear-gradient(54deg, rgba(0,35,49,1) 23%, rgb(0, 80, 112) 100%); 
+    background: rgb(0, 80, 112);
+    /* background: linear-gradient(54deg, rgba(0,35,49,1) 23%, rgb(0, 80, 112) 100%);  */
     box-shadow: 0 0px 2px rgba(0, 0, 0, 0.808);
     -webkit-filter: drop-shadow(0 0px 2px rgba(0, 0, 0, 0.808));
     filter: drop-shadow(0 0px 2px rgba(0, 0, 0, 0.808));
     z-index: 1;
     color: #fff;
     font-size: 20px;
-    text-shadow: 1px 2px 2px rgb(17, 17, 17);
+    /* text-shadow: 1px 2px 2px rgb(17, 17, 17); */
 }
 
 #skills__wrapper {
