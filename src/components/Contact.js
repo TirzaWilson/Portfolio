@@ -1,22 +1,35 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
 
-export const ContactUs = () => {
+
+const ContactUs = () => {
   const form = useRef();
-
+  
   const sendEmail = (e) => {
+    const name = document.getElementById('name').value.length;
+    const email = document.getElementById('email').value.length;
+    const message = document.getElementById('message').value.length;
+    const popStyle = document.getElementById('pop').style;
+    const popMsg = document.getElementById('pop-msg');
+
     e.preventDefault();
-
-    emailjs.sendForm('service_au26e6q', 'template_armg4k8', form.current, 'rH_ny2Apfo9wTf4mW')
+    
+    if (name <= 0 || email <= 0 || message <= 0) {
+      popMsg.innerText = 'Pleae do not leave any fields blank.';
+      popStyle.display = 'flex';
+    } else {
+      emailjs.sendForm('service_au26e6q', 'template_armg4k8', form.current, 'rH_ny2Apfo9wTf4mW')
       .then((result) => {
-          console.log(result.text);
-          e.target.reset();
-          document.getElementById("submit_btn").disabled = true;
-
+        console.log(result.text);
+        e.target.reset();
+        document.getElementById("submit_btn").disabled = true;
+        popMsg.innerText = 'Message has been sent!';
+        popStyle.display = 'flex';
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
+    }  
   };
 
   return (
@@ -27,18 +40,18 @@ export const ContactUs = () => {
         <form ref={form} onSubmit={sendEmail}>
           <div>
             <label>Name</label>
-            <input type="text" name="from_name" />
+            <input id='name' type="text" name="from_name"/>
           </div>
           <div>
             <label>Email</label>
-            <input type="email" name="user_email" />
+            <input id='email' type="email" name="user_email" />
           </div>
           <div>
             <label>Message</label>
-            <textarea name="message" />
-            <input id="submit_btn" type="submit" value="Send" />
+            <textarea id='message' name="message" />
+            <button id="submit_btn" type="submit" value="Send">Submit</button>
           </div>
-      </form>
+        </form>
       </div>
     </div>
   )

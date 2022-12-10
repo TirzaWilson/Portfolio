@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar";
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/Home';
-import Cards from "./components/Cards";
+import Popup from './components/Popup';
+import setButtonPopup from './components/Contact'
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           </Routes>
         </Router>
       </>
+      <Popup>
+        <h3>Message has been sent!</h3>
+      </Popup>
     </div>
   );
 }
