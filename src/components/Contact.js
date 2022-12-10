@@ -12,6 +12,8 @@ export const ContactUs = () => {
       .then((result) => {
           console.log(result.text);
           e.target.reset();
+          document.getElementById("submit_btn").disabled = true;
+
       }, (error) => {
           console.log(error.text);
       });
@@ -34,7 +36,7 @@ export const ContactUs = () => {
           <div>
             <label>Message</label>
             <textarea name="message" />
-            <input type="submit" value="Send" />
+            <input id="submit_btn" type="submit" value="Send" />
           </div>
       </form>
       </div>
