@@ -13,7 +13,7 @@
 
 #skills__wrapper {
     position: relative;
-    top: calc(-4rem + -80px);
+    top: -400px;
 }
 
 .skills__container {
@@ -52,6 +52,11 @@
         font-size: 15px;
     }
 
+    #skills__wrapper {
+        position: relative;
+        top: -300px;
+    }
+
     .skills__container {
         display: grid;
         grid-template-columns: 1fr;
@@ -63,16 +68,17 @@
     .skills__list {
         display: flex;
         gap: 50px;
-        justify-self: center;
+        justify-self: left;
         margin-top: 25px;
     }
 
     .skills__intro {
         margin: 0 auto;
         justify-self: center;
-        text-align: center;
+        text-align: left;
     }
 
     .skills__header {
+        text-align: center;
     }
 }

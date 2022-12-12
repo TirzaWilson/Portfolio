@@ -33,23 +33,23 @@ const ContactUs = () => {
   };
 
   return (
-    <div className='contact'>
-      <h1 className='contact__header'>I'd love to hear from you!</h1>
+    <div className='contact' id='contact'>
+      <h1 className='contact__header' data-aos="fade-up">I'd love to hear from you!</h1>
       <div className='contact__wrapper'/>
       <div className='contact__form__container'>
         <form ref={form} onSubmit={sendEmail}>
-          <div>
+          <div data-aos="fade-up">
             <label>Name</label>
             <input id='name' type="text" name="from_name"/>
           </div>
-          <div>
+          <div data-aos="fade-up">
             <label>Email</label>
             <input id='email' type="email" name="user_email" />
           </div>
-          <div>
+          <div data-aos="fade-up">
             <label>Message</label>
             <textarea id='message' name="message" />
-            <button id="submit_btn" type="submit" value="Send">Submit</button>
+            <button id="submit_btn" className='btn--outline btn' type="submit" value="Send">Submit</button>
           </div>
         </form>
       </div>

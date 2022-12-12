@@ -6,9 +6,9 @@ export default function Skills() {
     <div id="skills">
       <div id='skills__wrapper'></div>  
       <div className="skills__container">
-        <div className='skills__intro' data-aos="fade-right">
-            <h1 className="skills__header">Skills</h1>
-            <p>
+        <div className='skills__intro'>
+            <h1 className="skills__header" data-aos="fade-left">Skills</h1>
+            <p data-aos="fade-right">
                 I'm an enthusiastic and quick learner. Within one year I was able to learn the following languages/frameworks without any prior programming knowledge.
             </p>
         </div>
