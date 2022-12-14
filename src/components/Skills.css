@@ -13,7 +13,7 @@
 
 #skills__wrapper {
     position: relative;
-    top: -400px;
+    top: -300px;
 }
 
 .skills__container {
@@ -28,8 +28,8 @@
     margin: 0 auto;
 }
 
-.Skills__header {
-
+.skills__header {
+    padding-bottom: 10px;
 }
 
 .skills__list {
@@ -54,7 +54,7 @@
 
     #skills__wrapper {
         position: relative;
-        top: -300px;
+        top: -250px;
     }
 
     .skills__container {

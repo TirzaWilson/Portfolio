@@ -15,7 +15,8 @@ video {
     justify-content: center;
     align-items: center;
     object-fit: contain;
-    background: rgba(14, 18, 18, 0.174);
+    background-color: rgba(14, 18, 18, 0.458);
+    background-blend-mode: multiply;
 }
 
 .hero-container h1 {
@@ -36,18 +37,13 @@ video {
 
 .hero-btns {
     margin-top: 30px;
-    box-shadow: 0 0px 3px rgba(17, 17, 17, 0.856);
-    -webkit-filter: drop-shadow(0 2px 3px rgba(17, 17, 17, 0.856));
-    filter: drop-shadow(0 2px 3px rgba(17, 17, 17, 0.856));
+    display: flex;
 }
 
 @media screen and (max-width: 960px){
-    video {
-        /* display: none; */
-    }
 
     .hero-container {
-
+        /* background-color: rgb(24, 24, 24); */
     }
 
     .hero-container h1 {
@@ -55,8 +51,23 @@ video {
         font-weight: normal;
     }
 }
+@media screen and (max-width: 1200px){
+    video {
+        display: none;
+    }
+
+    .hero-container {
+        background-image: url(../../public/images/darkcyan2.jpg);
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: center;
+        background-attachment: scroll;
+        background-position-y: -170px;
+    }
+}
 
 @media screen and (max-width: 760px) {
+
     .hero-container h1 {
         font-size: 33px;
         font-weight: normal;
@@ -69,5 +80,17 @@ video {
 
     .hero-btns {
         margin: 15px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .hero-container h1 {
+        font-size: 29px;
+    }
+    
+    .hero-container h2 {
+        font-size: 23px;
     }
 }

@@ -34,19 +34,18 @@ const ContactUs = () => {
 
   return (
     <div className='contact' id='contact'>
-      <h1 className='contact__header' data-aos="fade-up">I'd love to hear from you!</h1>
-      <div className='contact__wrapper'/>
+      <h1 className='contact__header' data-aos="fade-in">I'd love to hear from you!</h1>
       <div className='contact__form__container'>
         <form ref={form} onSubmit={sendEmail}>
-          <div data-aos="fade-up">
+          <div data-aos="fade-in">
             <label>Name</label>
             <input id='name' type="text" name="from_name"/>
           </div>
-          <div data-aos="fade-up">
+          <div data-aos="fade-in">
             <label>Email</label>
             <input id='email' type="email" name="user_email" />
           </div>
-          <div data-aos="fade-up">
+          <div data-aos="fade-in">
             <label>Message</label>
             <textarea id='message' name="message" />
             <button id="submit_btn" className='btn--outline btn' type="submit" value="Send">Submit</button>

@@ -11,10 +11,10 @@ function Cards() {
   return (
     <div id="cards">
       <div id='cards__link'></div>
-      <h1 className="cards__header" data-aos="fade">PROJECTS</h1>
-      <div className="cards__container">
+      <h1 className="cards__header" data-aos="fade-in">PROJECTS</h1>
+      <div className="cards__container" data-aos="fade-in">
          <div className="cards__wrapper"></div>
-         <ul className="cards__items" data-aos="fade-up">
+         <ul className="cards__items">
             <CardItem 
             src="images/img-9.jpg"
             text="Designed and built a custom website from the ground up for a local real estate company."

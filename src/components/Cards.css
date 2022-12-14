@@ -170,11 +170,11 @@
   
     #cards__link {
       position: relative;
-      top: calc(-1rem + -80px);
+      top: calc(-4rem + -80px);
     }
     
     #cards {
-      padding: 2rem;
+      padding: 4rem 2rem;
     }
     
     .cards__item__text {
