@@ -61,5 +61,10 @@
     .resume--btn--hero {
       padding-left: 0;
       padding-top: 15px;
+      width: 100%;
+    }
+
+    .resume--btn--size {
+      width: 100%;
     }
   }

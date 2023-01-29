@@ -10,9 +10,9 @@ import ResumeButton from './ResumeButton';
 function HeroSection() {
   return (
     <div className='hero-container'>
-        <video src="/videos/video-3.mp4" type='video/mp4' controls="false" autoPlay loop muted/>
-        <h1>TAZMOND MERCHANT</h1>
-        <h2>Front end developer</h2>
+        {/* <video src="/videos/video-3.mp4" type='video/mp4' controls="false" autoPlay loop muted/> */}
+        <h1>Tirza Wilson</h1>
+        <h2>Cyber Security Analyst</h2>
         <div className='hero-btns'>
             <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
                 Contact Me

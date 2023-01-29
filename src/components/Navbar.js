@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import { Button } from './Button';
 import './Navbar.css';
 
 function Navbar() {
@@ -32,29 +31,34 @@ function Navbar() {
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
-                <a href='' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                   Home
-                </a>
+                </Link>
               </li>
               <li className='nav-item'>
-                <a href='#cards__link' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='/Cards' className='nav-links' onClick={closeMobileMenu}>
                   Projects
-                </a>
+                </Link>
               </li>
-              <li className='nav-item'>
+              {/* <li className='nav-item'>
                 <a href='#skills__wrapper' className='nav-links' onClick={closeMobileMenu}>
                   Skills
                 </a>
-              </li>
+              </li> */}
               <li className='nav-item'>
-                <a href='#about__link' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='/About' className='nav-links' onClick={closeMobileMenu}>
                   About
-                </a>
+                </Link>
               </li>
               <li className='nav-item'>
-                <a href='#contact' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='/Contact' className='nav-links' onClick={closeMobileMenu}>
                   Contact
-                </a>
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link to="/Gallery" className='nav-links' onClick={closeMobileMenu}>
+                  Gallery
+                </Link>
               </li>
             </ul>
             {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
